@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Temperature from "./Temperature";
 
 
 export default function Weather() {
@@ -7,7 +8,7 @@ export default function Weather() {
 
   function handleClick(event) {
     event.preventDefault();
-    setWeather(city={city});
+    setWeather(<Temperature city={city} />);
   }
 
   function updateCity(event) {
