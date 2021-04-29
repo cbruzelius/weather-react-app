@@ -25,15 +25,18 @@ export default function Temperature(props) {
   return (
     <div>
       <ul>
-        <li> 
-          <h3>
-          {city}
-          </h3>
+        <li>
+          <h3>{city}</h3>
         </li>
         <li>Temperature: {temperature}°C</li>
-        <li>{description}</li>
+        <li>
+          {" "}
+          <p className="description"> {description} </p>{" "}
+        </li>
         <li>Humidity: {humidity}%</li>
-        <li>Wind Speed: {wind}km/h</li>
+        <li>
+          <p> Wind Speed: {wind}km/h </p>
+        </li>
         <li>
           <img
             src={`http://openweathermap.org/img/wn/${icon}@2x.png`}

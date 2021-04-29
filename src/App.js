@@ -6,7 +6,7 @@ function App() {
     <div className="Search-engine">
       <header className="Engine-header">
         <h1>Weather Search</h1>
-      <h2>Enter the name of the city below.</h2>
+      <h4>Enter a city name.</h4>
       <Weather />
       <p className="Source-code">
         This page was coded by Cari Bruzelius and is {" "}

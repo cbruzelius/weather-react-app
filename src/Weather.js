@@ -18,7 +18,7 @@ export default function Weather() {
   return (
     <div className="showWeather">
       <form onSubmit={handleClick}>
-        <input type="search" onChange={updateCity} />
+        <input className="inputBar" type="search" onChange={updateCity} />
         <input type="submit" value="Search" />
       </form>
       <p>{weather}</p>
